@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="popkovanton.improvetest.SendMailActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/photoSend"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/darker_gray" />
+
+        <RelativeLayout
+            android:id="@+id/rel_1"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_below="@+id/photoSend"
+            android:layout_marginLeft="@dimen/layout_margin"
+            android:layout_marginRight="@dimen/layout_margin">
+
+            <ImageView
+                android:id="@+id/emailIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/email" />
+
+            <TextView
+                android:id="@+id/emailSend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="72dp"
+                android:layout_toRightOf="@+id/emailIcon"
+                android:text="Send Email" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_2"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_below="@+id/rel_1"
+            android:layout_marginLeft="@dimen/layout_margin"
+            android:layout_marginRight="@dimen/layout_margin">
+
+            <ImageView
+                android:id="@+id/phoneIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/phone" />
+
+            <TextView
+                android:id="@+id/phoneSend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="72dp"
+                android:layout_toRightOf="@+id/phoneIcon"
+                android:text="Send Phone" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_3"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_below="@+id/rel_2"
+            android:layout_marginLeft="@dimen/layout_margin"
+            android:layout_marginRight="@dimen/layout_margin">
+
+            <ImageView
+                android:id="@+id/passIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/wrench" />
+
+            <TextView
+                android:id="@+id/passSend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="72dp"
+                android:layout_toRightOf="@+id/passIcon"
+                android:text="Send Password" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/buttonSend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorPrimary"
+            android:text="@string/send_by_email" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

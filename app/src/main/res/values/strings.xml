@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ImproveTest</string>
+    <string name="view_button">View</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="password">Password</string>
+    <string name="error_pass">Enter number and letters(upper and lowercase)</string>
+    <string name="error_pass_length">At least 6 characters</string>
+    <string name="error">Enter text</string>
+    <string name="error_email">Enter correct email</string>
+    <string name="error_phone_empty">Enter phone</string>
+    <string name="error_phone">At least 11 numbers</string>
+
+    <string name="take_photo">Large photo</string>
+    <string name="file_error">Отсутсвует фото</string>
+    <string name="send_by_email">Send by email</string>
+</resources>
